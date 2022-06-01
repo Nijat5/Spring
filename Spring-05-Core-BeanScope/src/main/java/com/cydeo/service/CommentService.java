@@ -20,6 +20,7 @@ public class CommentService {
     public CommentService(CommentRepository commentRepository,@Qualifier("PUSH") CommentNotificationProxy commentNotificationProxy) {
         this.commentRepository = commentRepository;
         this.commentNotificationProxy = commentNotificationProxy;
+        System.out.println("Hello");
     }
 
     public void publishComment(Comment comment){
